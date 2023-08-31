@@ -1,0 +1,9 @@
+FROM python:3.11-alpine
+WORKDIR /app
+RUN apk add --no-cache gcc musl-dev linux-headers sqlite
+COPY dist/sportsbook-1.0-py3-none-any.whl dist/sportsbook-1.0-py3-none-any.whl
+RUN pip install dist/sportsbook-1.0-py3-none-any.whl
+COPY setup.sh setup.sh
+COPY sql .
+RUN ./setup.sh 
+CMD ["python", "-m", "sportsbook"]

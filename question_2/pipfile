@@ -1,0 +1,16 @@
+[[source]]
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pytest = "*"
+
+[packages]
+fastapi = ">=0.103.0"
+databases= ">=0.8.0"
+aiosqlite= ">=0.19.0"
+uvicorn= ">=0.23.2"
+
+[requires]
+python_version = "3.11"
