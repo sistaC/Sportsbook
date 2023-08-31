@@ -1,0 +1,10 @@
+version: '3'
+services:
+  server:
+    build: .
+    environment:
+      DB_PATH: /app/data/sportsbook.db
+    ports:
+    - "8000:8000"
+    volumes:
+    - ./.data:/app

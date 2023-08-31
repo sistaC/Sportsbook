@@ -1,0 +1,10 @@
+CREATE TABLE IF NOT EXISTS events (id INTEGER PRIMARY KEY AUTOINCREMENT, 
+                                    event_name VARCHAR(100) NOT NULL UNIQUE, 
+                                    slug VARCHAR(100) NOT NULL, 
+                                    active BOOLEAN NOT NULL, 
+                                    type VARCHAR(20) NOT NULL, 
+                                    sport_name VARCHAR(100) NOT NULL, 
+                                    status VARCHAR(20) NOT NULL, 
+                                    scheduled_start DATETIME NOT NULL, 
+                                    actual_start DATETIME, 
+                                    CONSTRAINT fk_sports FOREIGN KEY (sport_name) REFERENCES sports(name))
