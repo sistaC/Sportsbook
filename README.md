@@ -223,15 +223,6 @@ You need to install pytest to execute the tests and execute the tests using belo
 
 `$ pytest`
 
-
-## Tech Stack / Built With
-List down the technology / frameworks / tools / technology you have used in this project.
-1. [Laravel](https://laravel.com/) - The PHP framework
-2. [IPFS](https://ipfs.io/)  - A peer-to-peer hypermedia protocol to make the web faster, safer, and more open. 
-3. [Android](https://www.android.com/) - The world’s most popular mobile OS
-
-
-
 ## Authors
 Chidrupi Sista  – chidrupi.sista@gmail.com
  
